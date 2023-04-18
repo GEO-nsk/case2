@@ -1,2 +1,1 @@
 print('nikola')
-print('mama')
