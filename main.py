@@ -2,7 +2,7 @@
 Title: Tax Calculation
 Group:
 Gagol Egor
-Tarlo Evgeny
+Tarlo Evgeny - 64
 Karpenko Nikolay
 """
 
