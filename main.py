@@ -11,6 +11,7 @@ import ru_local as ru
 yes = ru.ans_yes
 no = ru.ans_no
 res_tax = 0
+a = [ru.q040, ru.q041, ru.q042, ru.q043, ru.q043, ru.q045]
 
 print(ru.q0)
 if str.lower(input()) == yes:  # tax resident
@@ -40,10 +41,14 @@ else:  # non-tax resident
         non_res_in_divs = int(input())
         res_tax += non_res_in_divs * 0.15
 
+    x = 0
     print(ru.q04)
     if str.lower(input()) == yes:
-        print(ru.q040)
-        if str.lower(input()) == yes:
+        for i in range(6):
+            print(a[i])
+            if str.lower(input()) == yes:
+                x += 1
+        if x > 0:
             print(ru.in_am)
             if str.lower(input()) == yes:  # tax is 15% + 650000
                 print(ru.in_am_non_res)
