@@ -15,7 +15,47 @@ a = [ru.q040, ru.q041, ru.q042, ru.q043, ru.q043, ru.q045]
 
 print(ru.q0)
 if str.lower(input()) == yes:  # tax resident
-    None
+    print(ru.q10)
+    if str.lower(input()) == yes:
+        print(ru.in_am_res)
+        in_am = int(input())
+        res_tax += in_am * 0.15 + 650000
+    else:
+        print(ru.in_am_res)
+        in_am = int(input())
+        res_tax += in_am * 0.13
+
+    print(ru.q11)
+    if str.lower(input()) == yes:
+        print(ru.in_am_res)
+        in_am = int(input())
+        res_tax += in_am * 0.13
+
+    print(ru.q12)
+    if str.lower(input()) == yes:
+        print(ru.in_am_res)
+        in_am = int(input())
+        res_tax += in_am * 0.35
+
+    print(ru.q13)
+    if str.lower(input()) == yes:
+        print(ru.in_am_res)
+        in_am = int(input())
+        res_tax += in_am * 0.09
+
+    print(ru.q14)  # additional question
+    if str.lower(input()) == yes:
+        print(ru.q15)
+        if str.lower(input()) == yes:
+            print(ru.in_am_res)
+            in_am = int(input())
+            res_tax += in_am * 0.15
+
+    if res_tax > 0:
+        print(ru.res_tax, res_tax)
+    else:
+        print(ru.in_am_non_res_zero)
+
 else:  # non-tax resident
     print(ru.q00)
     if str.lower(input()) == yes:  # tax is 30% by income
@@ -58,6 +98,7 @@ else:  # non-tax resident
                 print(ru.in_am_non_res)  # tax is 13%
                 in_am = int(input())
                 res_tax += in_am * 0.13
-
+    if res_tax > 0:
+        print(ru.res_tax, res_tax)
     else:
         print(ru.in_am_non_res_zero)
