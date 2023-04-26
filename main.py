@@ -8,10 +8,10 @@ Karpenko Nikolay
 
 import ru_local as ru
 
+a = [ru.q040, ru.q041, ru.q042, ru.q043, ru.q044, ru.q045]
 yes = ru.ans_yes
 no = ru.ans_no
 res_tax = 0
-a = [ru.q040, ru.q041, ru.q042, ru.q043, ru.q044, ru.q045]
 
 print(ru.q0)
 if str.lower(input()) == yes:  # tax resident
