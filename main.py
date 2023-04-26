@@ -3,7 +3,7 @@ Title: Tax Calculation
 Group:
 Gagol Egor - 5
 Tarlo Evgeny - 64
-Karpenko Nikolay
+Karpenko Nikolay - 60
 """
 
 import ru_local as ru
